@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --primary: 214 84% 56%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 240 4.8% 95.9%;
+  --secondary-foreground: 240 5.9% 10%;
+  --accent: 240 4.8% 95.9%;
+  --accent-foreground: 240 5.9% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 5% 64.9%;
+  --radius: 0.5rem;
+  
+  /* Custom blue theme colors */
+  --primary-blue: 214 84% 56%; /* #3b82f6 */
+  --secondary-blue: 217 91% 60%; /* #60a5fa */
+  --accent-blue: 213 93% 68%; /* #93c5fd */
+  --light-blue: 214 100% 97%; /* #eff6ff */
+  --dark-blue: 224 76% 48%; /* #1e40af */
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 214 84% 56%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .primary-blue {
+    @apply bg-blue-600 text-white;
+  }
+  
+  .secondary-blue {
+    @apply bg-blue-500 text-white;
+  }
+  
+  .accent-blue {
+    @apply bg-blue-400 text-white;
+  }
+  
+  .light-blue {
+    @apply bg-blue-50 text-blue-900;
+  }
+  
+  .text-primary-blue {
+    @apply text-blue-600;
+  }
+  
+  .hover-primary-blue {
+    @apply hover:bg-blue-700;
+  }
+  
+  .border-primary-blue {
+    @apply border-blue-600;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Smooth transitions */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Card hover effects */
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+}
+
+/* Carousel indicators */
+.carousel-indicator {
+  @apply w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity duration-200 cursor-pointer;
+}
+
+.carousel-indicator.active {
+  @apply opacity-100;
+}
+
+/* Dropdown animations */
+.dropdown-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.dropdown-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.dropdown-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 300ms, transform 300ms;
+}
