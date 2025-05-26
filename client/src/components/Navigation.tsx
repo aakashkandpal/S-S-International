@@ -39,8 +39,8 @@ export default function Navigation() {
           {/* Company Logo */}
           <div className="flex items-center">
             <Link href="/">
-              <div className="w-64 h-12 bg-blue-600 rounded-lg flex items-center justify-center cursor-pointer hover:bg-blue-700 transition-colors duration-200">
-                <span className="text-white font-bold text-xl tracking-wide">
+              <div className="cursor-pointer hover:opacity-80 transition-opacity duration-200">
+                <span className="text-blue-600 font-bold text-2xl tracking-wide">
                   S&S International
                 </span>
               </div>

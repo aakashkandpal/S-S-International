@@ -15,8 +15,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <div className="w-64 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
-              <span className="text-white font-bold text-xl tracking-wide">
+            <div className="mb-6">
+              <span className="text-white font-bold text-2xl tracking-wide">
                 S&S International
               </span>
             </div>
