@@ -1,0 +1,34 @@
+Develop a fully responsive web application using React.js to showcase an organization's named as S&S International an handicrafts exporter. The application should provide an intuitive and seamless UI/UX across desktop, laptop, and mobile interfaces.
+Key Features:
+Navigation Menu (Fixed Top Bar) which contains:
+(i) Company Logo (250x50px) make a logo with a nice font with the name of organisation: Clickable, redirects to the Home page.
+(ii)Gallery: Dropdown menu containing:
+Lac
+Felt
+Beads
+Ceramic
+Wood
+Resin
+Horn Bone
+View All (Redirects to a Services page with a grid layout displaying all Product, each with a 400x400px thumbnail, title, subtitle, and description.)
+Gallery menu will have a hover drop down with the following options on clicking on each of the options every product should be displayed with the product name an image that I can insert afterwards: 
+
+(iii) Contact us: No drop down menu when clicked redirect to the footer  which contains Email: s&sinternational@gmail.com and Address:  D173, EPIP Export Zone UPSIDC Kasana, Greater Noida when clicked should redirect into google maps https://maps.app.goo.gl/rN7EYQDABV45Y6U1A and whatsapp contact: whatsapp green icon: Shresth Rajiv (when clicked should redirect to this https://wa.me/919910929368)
+Footer
+Copyright 2025 | S&S International | All Rights Reserved
+Pages & Content Structure
+(iv) About Us Page No drop down menu when clicked should redirect on a different page and its content will be: We are pleased to introduce S&S International, a leading, well-established, and manufacturer and exporter specialising in high-quality handicrafts. With years of experience in the industry, we take pride in delivering exceptional craftsmanship and innovative designs to meet the diverse needs of our global clientele. We are committed to building long-term relationships based on trust, integrity, and dedication. Our unwavering focus on quality, attention to detail, and customer-centric approach ensures that we consistently exceed expectations. We are involved in manufacturing and exporting our products to countries like USA, UK, JAPAN, AUSTRALIA, EUROPE & SOUTH AFRICA.  Our clients include well-known wholesalers, catalogue companies mail order purchase companies etc.
+Our Vision: At S&S International, our motto is "Fair Business & Excellence in Craftsmanship." As a leading manufacturer and exporter of high-quality handicrafts, we are dedicated to delivering products that reflect precision, creativity, and timeless artistry.  Renowned for our consistent quality, competitive pricing, and on-time delivery, we have built a reputation as a trusted partner for clients worldwide. Our commitment to innovation drives us to continuously evolve, ensuring that we stay ahead of industry trends and meet the ever-changing demands of the global market.
+Where are we located: SEDEX Complianced Factory Export Zone Greater Noida. Spread across an area of 27000sq ft. (Give an option to insert the image and https://maps.app.goo.gl/WnoeDEFAVUXrrdE9A when clicked redirect to google maps)
+Home Page should look like:
+Image Carousel: 4 auto-rotating banners with 1 single text overlay as a tag line “Handcrafted Elegance, Globally Delivered - where tradition meets global quality.”
+Feature Cards (Grid Layout, Shadow Effect):
+10 items, 300x300px logos, with title, subtitle, and description (horizontal scroll).
+Sections (Grid Layout):
+Our Services (6 items): Image Carousel Circular 300x300px logos, title, subtitle, description, and View More button (redirects to Services page).
+Our Partners (6 items): Circular 300x300px logos, title, subtitle, description, and View More button 
+Modern & Professional Blue Color Theme
+Well-structured Typography & Readable Fonts
+Smooth Transitions & Hover Effects for Better UX
+Consistent Grid Layouts for Visual Hierarchy
+SEO & Performance Optimizations
