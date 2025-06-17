@@ -7,25 +7,27 @@ import { featuredProducts, type Product } from "@/data/products";
 export default function Services() {
   const [location] = useLocation();
   const [filteredProducts, setFilteredProducts] = useState<Product[]>(featuredProducts);
-  const [selectedCategory, setSelectedCategory] = useState<string>("all");
+  const [selectedCategory, setSelectedCategory] = useState<string>("lac");
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const category = urlParams.get("category");
     
-    if (category && category !== "all") {
+    if (category) {
       setSelectedCategory(category);
       setFilteredProducts(
         featuredProducts.filter((product) => product.category === category)
       );
     } else {
-      setSelectedCategory("all");
-      setFilteredProducts(featuredProducts);
+      // Default to first category if no category specified
+      setSelectedCategory("lac");
+      setFilteredProducts(
+        featuredProducts.filter((product) => product.category === "lac")
+      );
     }
   }, [location]);
 
   const categories = [
-    { label: "All Products", value: "all" },
     { label: "Lac", value: "lac" },
     { label: "Felt", value: "felt" },
     { label: "Beads", value: "beads" },
@@ -40,16 +42,12 @@ export default function Services() {
 
   const filterProducts = (category: string) => {
     setSelectedCategory(category);
-    if (category === "all") {
-      setFilteredProducts(featuredProducts);
-    } else {
-      setFilteredProducts(
-        featuredProducts.filter((product) => product.category === category)
-      );
-    }
+    setFilteredProducts(
+      featuredProducts.filter((product) => product.category === category)
+    );
     
     // Update URL without navigating
-    const newUrl = category === "all" ? "/services" : `/services?category=${category}`;
+    const newUrl = `/services?category=${category}`;
     window.history.pushState({}, "", newUrl);
   };
 
