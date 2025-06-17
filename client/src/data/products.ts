@@ -23,7 +23,92 @@ export interface Partner {
   image: string;
 }
 
+// Homepage Featured Products (original 10 items for horizontal scroll)
 export const featuredProducts: Product[] = [
+  {
+    id: "1",
+    name: "Wooden Crafts",
+    title: "Traditional Woodwork",
+    description: "Exquisite wooden handicrafts showcasing traditional craftsmanship and modern design.",
+    category: "wood",
+    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
+  },
+  {
+    id: "2",
+    name: "Ceramic Pottery",
+    title: "Handmade Ceramics",
+    description: "Beautiful ceramic pieces crafted with precision and artistic flair.",
+    category: "ceramic",
+    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
+  },
+  {
+    id: "3",
+    name: "Beadwork Jewelry",
+    title: "Artisan Beadwork",
+    description: "Intricate beadwork jewelry combining traditional techniques with contemporary designs.",
+    category: "beads",
+    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
+  },
+  {
+    id: "4",
+    name: "Felt Products",
+    title: "Natural Felt Crafts",
+    description: "Eco-friendly felt products made from natural materials with vibrant colors.",
+    category: "felt",
+    image: "https://images.unsplash.com/photo-1544376664-80b17f09d399?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
+  },
+  {
+    id: "5",
+    name: "Lac Decoratives",
+    title: "Traditional Lac Work",
+    description: "Lustrous lac-finished decorative items showcasing ancient Indian techniques.",
+    category: "lac",
+    image: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
+  },
+  {
+    id: "6",
+    name: "Resin Art",
+    title: "Modern Resin Crafts",
+    description: "Contemporary resin art pieces blending modern techniques with artistic vision.",
+    category: "resin",
+    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
+  },
+  {
+    id: "7",
+    name: "Horn & Bone",
+    title: "Natural Material Crafts",
+    description: "Unique horn and bone crafts demonstrating skilled artisanship and natural beauty.",
+    category: "horn-bone",
+    image: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
+  },
+  {
+    id: "8",
+    name: "Metal Crafts",
+    title: "Metalwork Art",
+    description: "Intricate metalwork showcasing traditional techniques and contemporary appeal.",
+    category: "metal",
+    image: "https://images.unsplash.com/photo-1583623025817-d180a2221d0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
+  },
+  {
+    id: "9",
+    name: "Textile Arts",
+    title: "Handwoven Textiles",
+    description: "Beautiful handwoven textiles featuring traditional patterns and vibrant colors.",
+    category: "textile",
+    image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
+  },
+  {
+    id: "10",
+    name: "Stone Sculpture",
+    title: "Carved Stone Art",
+    description: "Elegant stone sculptures and decorative pieces carved with precision and artistry.",
+    category: "stone",
+    image: "https://images.unsplash.com/photo-1587905069134-008460d7a636?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
+  }
+];
+
+// Detailed Products for Services Page (9 products per category)
+export const detailedProducts: Product[] = [
   // Lac Products (9 items)
   {
     id: "lac1",

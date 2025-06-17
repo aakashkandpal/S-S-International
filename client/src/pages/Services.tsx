@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import { useLocation } from "wouter";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { featuredProducts, type Product } from "@/data/products";
+import { detailedProducts, type Product } from "@/data/products";
 
 export default function Services() {
   const [location] = useLocation();
-  const [filteredProducts, setFilteredProducts] = useState<Product[]>(featuredProducts);
+  const [filteredProducts, setFilteredProducts] = useState<Product[]>(detailedProducts);
   const [selectedCategory, setSelectedCategory] = useState<string>("lac");
 
   useEffect(() => {
@@ -16,13 +16,13 @@ export default function Services() {
     if (category) {
       setSelectedCategory(category);
       setFilteredProducts(
-        featuredProducts.filter((product) => product.category === category)
+        detailedProducts.filter((product) => product.category === category)
       );
     } else {
       // Default to first category if no category specified
       setSelectedCategory("lac");
       setFilteredProducts(
-        featuredProducts.filter((product) => product.category === "lac")
+        detailedProducts.filter((product) => product.category === "lac")
       );
     }
   }, [location]);
@@ -43,7 +43,7 @@ export default function Services() {
   const filterProducts = (category: string) => {
     setSelectedCategory(category);
     setFilteredProducts(
-      featuredProducts.filter((product) => product.category === category)
+      detailedProducts.filter((product) => product.category === category)
     );
     
     // Update URL without navigating
