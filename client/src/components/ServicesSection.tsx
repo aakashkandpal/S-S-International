@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Link } from "wouter";
 import { services } from "@/data/products";
 
 export default function ServicesSection() {
@@ -33,12 +31,7 @@ export default function ServicesSection() {
                 {service.title}
               </h3>
               <p className="text-gray-600 mb-4">{service.subtitle}</p>
-              <p className="text-gray-500 mb-6">{service.description}</p>
-              <Link href="/services">
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium">
-                  View More
-                </Button>
-              </Link>
+              <p className="text-gray-500">{service.description}</p>
             </div>
           ))}
         </div>
