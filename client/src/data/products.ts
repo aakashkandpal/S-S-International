@@ -31,7 +31,7 @@ export const featuredProducts: Product[] = [
     title: "Traditional Woodwork",
     description: "Exquisite wooden handicrafts showcasing traditional craftsmanship and modern design.",
     category: "wood",
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
+    image: "https://ik.imagekit.io/mdnl1bnr6/wood1-2.jpg?updatedAt=1750143499928"
   },
   {
     id: "2",
@@ -39,7 +39,7 @@ export const featuredProducts: Product[] = [
     title: "Handmade Ceramics",
     description: "Beautiful ceramic pieces crafted with precision and artistic flair.",
     category: "ceramic",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
+    image: "https://ik.imagekit.io/mdnl1bnr6/Screenshot%202025-06-17%20at%2010.43.28%E2%80%AFPM-2.jpg?updatedAt=1750181356346"
   },
   {
     id: "3",
@@ -47,7 +47,7 @@ export const featuredProducts: Product[] = [
     title: "Artisan Beadwork",
     description: "Intricate beadwork jewelry combining traditional techniques with contemporary designs.",
     category: "beads",
-    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
+    image: "https://ik.imagekit.io/mdnl1bnr6/Screenshot%202025-06-17%20at%2010.48.31%E2%80%AFPM-2.jpg?updatedAt=1750181355976"
   },
   {
     id: "4",
@@ -55,7 +55,7 @@ export const featuredProducts: Product[] = [
     title: "Natural Felt Crafts",
     description: "Eco-friendly felt products made from natural materials with vibrant colors.",
     category: "felt",
-    image: "https://images.unsplash.com/photo-1544376664-80b17f09d399?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
+    image: "https://ik.imagekit.io/mdnl1bnr6/Screenshot%202025-06-17%20at%2010.55.28%E2%80%AFPM.jpg?updatedAt=1750181355566"
   },
   {
     id: "5",
