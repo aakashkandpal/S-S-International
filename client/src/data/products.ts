@@ -3,7 +3,7 @@ export interface Product {
   name: string;
   title: string;
   description: string;
-  category: 'lac' | 'felt' | 'beads' | 'ceramic' | 'wood' | 'resin' | 'horn-bone' | 'metal' | 'textile' | 'stone';
+  category: 'lac' | 'felt' | 'beads' | 'ceramic' | 'wood' | 'resin' | 'textile';
   image: string;
 }
 
@@ -67,7 +67,7 @@ export const featuredProducts: Product[] = [
   },
   {
     id: "6",
-    name: "Resin Art",
+    name: "Resin & Horn Bone",
     title: "Modern Resin Crafts",
     description: "Contemporary resin art pieces blending modern techniques with artistic vision.",
     category: "resin",
@@ -75,36 +75,12 @@ export const featuredProducts: Product[] = [
   },
   {
     id: "7",
-    name: "Horn & Bone",
-    title: "Natural Material Crafts",
-    description: "Unique horn and bone crafts demonstrating skilled artisanship and natural beauty.",
-    category: "horn-bone",
-    image: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "8",
-    name: "Metal Crafts",
-    title: "Metalwork Art",
-    description: "Intricate metalwork showcasing traditional techniques and contemporary appeal.",
-    category: "metal",
-    image: "https://images.unsplash.com/photo-1583623025817-d180a2221d0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "9",
     name: "Textile Arts",
     title: "Handwoven Textiles",
     description: "Beautiful handwoven textiles featuring traditional patterns and vibrant colors.",
     category: "textile",
     image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
   },
-  {
-    id: "10",
-    name: "Stone Sculpture",
-    title: "Carved Stone Art",
-    description: "Elegant stone sculptures and decorative pieces carved with precision and artistry.",
-    category: "stone",
-    image: "https://images.unsplash.com/photo-1587905069134-008460d7a636?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  }
 ];
 
 // Detailed Products for Services Page (9 products per category)
@@ -552,155 +528,7 @@ export const detailedProducts: Product[] = [
     category: "resin",
     image: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
   },
-
-  // Horn Bone Products (9 items)
-  {
-    id: "horn1",
-    name: "Horn & Bone",
-    title: "Natural Material Crafts",
-    description: "Unique horn and bone crafts demonstrating skilled artisanship and natural beauty.",
-    category: "horn-bone",
-    image: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "horn2",
-    name: "Horn Combs",
-    title: "Hair Accessories",
-    description: "Natural horn combs for healthy hair care and styling.",
-    category: "horn-bone",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "horn3",
-    name: "Bone Jewelry",
-    title: "Traditional Ornaments",
-    description: "Handcrafted bone jewelry with traditional patterns.",
-    category: "horn-bone",
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "horn4",
-    name: "Horn Buttons",
-    title: "Clothing Accessories",
-    description: "Natural horn buttons for clothing and accessories.",
-    category: "horn-bone",
-    image: "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "horn5",
-    name: "Bone Inlay Boxes",
-    title: "Decorative Storage",
-    description: "Elegant bone inlay boxes for jewelry and small items.",
-    category: "horn-bone",
-    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "horn6",
-    name: "Horn Spoons",
-    title: "Kitchen Utensils",
-    description: "Natural horn spoons for cooking and serving.",
-    category: "horn-bone",
-    image: "https://images.unsplash.com/photo-1583623025817-d180a2221d0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "horn7",
-    name: "Bone Sculptures",
-    title: "Artistic Pieces",
-    description: "Intricate bone sculptures showcasing traditional craftsmanship.",
-    category: "horn-bone",
-    image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "horn8",
-    name: "Horn Picture Frames",
-    title: "Photo Display",
-    description: "Natural horn picture frames with unique textures.",
-    category: "horn-bone",
-    image: "https://images.unsplash.com/photo-1587905069134-008460d7a636?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "horn9",
-    name: "Bone Hair Pins",
-    title: "Hair Accessories",
-    description: "Decorative bone hair pins with traditional designs.",
-    category: "horn-bone",
-    image: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-
-  // Metal Products (9 items)
-  {
-    id: "metal1",
-    name: "Metal Crafts",
-    title: "Metalwork Art",
-    description: "Intricate metalwork showcasing traditional techniques and contemporary appeal.",
-    category: "metal",
-    image: "https://images.unsplash.com/photo-1583623025817-d180a2221d0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "metal2",
-    name: "Metal Sculptures",
-    title: "Artistic Pieces",
-    description: "Beautiful metal sculptures with modern and traditional designs.",
-    category: "metal",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "metal3",
-    name: "Metal Lanterns",
-    title: "Decorative Lighting",
-    description: "Ornate metal lanterns for ambient lighting and decoration.",
-    category: "metal",
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "metal4",
-    name: "Metal Bowls",
-    title: "Serving Vessels",
-    description: "Handcrafted metal bowls for serving and decoration.",
-    category: "metal",
-    image: "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "metal5",
-    name: "Metal Wall Art",
-    title: "Decorative Panels",
-    description: "Stunning metal wall art pieces for interior decoration.",
-    category: "metal",
-    image: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "metal6",
-    name: "Metal Jewelry",
-    title: "Fashion Accessories",
-    description: "Elegant metal jewelry with traditional and modern designs.",
-    category: "metal",
-    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "metal7",
-    name: "Metal Candle Holders",
-    title: "Lighting Decor",
-    description: "Beautiful metal candle holders for creating ambiance.",
-    category: "metal",
-    image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "metal8",
-    name: "Metal Vases",
-    title: "Decorative Vessels",
-    description: "Artistic metal vases perfect for floral arrangements.",
-    category: "metal",
-    image: "https://images.unsplash.com/photo-1587905069134-008460d7a636?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "metal9",
-    name: "Metal Mirrors",
-    title: "Decorative Mirrors",
-    description: "Ornate metal mirrors with intricate frame designs.",
-    category: "metal",
-    image: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-
+  
   // Textile Products (9 items)
   {
     id: "textile1",
@@ -775,79 +603,7 @@ export const detailedProducts: Product[] = [
     image: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
   },
 
-  // Stone Products (9 items)
-  {
-    id: "stone1",
-    name: "Stone Sculpture",
-    title: "Carved Stone Art",
-    description: "Elegant stone sculptures and decorative pieces carved with precision and artistry.",
-    category: "stone",
-    image: "https://images.unsplash.com/photo-1587905069134-008460d7a636?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "stone2",
-    name: "Stone Vases",
-    title: "Decorative Vessels",
-    description: "Beautiful carved stone vases for floral arrangements.",
-    category: "stone",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "stone3",
-    name: "Stone Bowls",
-    title: "Serving Vessels",
-    description: "Handcrafted stone bowls for serving and decoration.",
-    category: "stone",
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "stone4",
-    name: "Stone Tiles",
-    title: "Decorative Tiles",
-    description: "Carved stone tiles for interior and exterior decoration.",
-    category: "stone",
-    image: "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "stone5",
-    name: "Stone Mortar & Pestle",
-    title: "Kitchen Tools",
-    description: "Traditional stone mortar and pestle for cooking.",
-    category: "stone",
-    image: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "stone6",
-    name: "Stone Decorative Objects",
-    title: "Home Decor",
-    description: "Artistic stone decorative objects for home and office.",
-    category: "stone",
-    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "stone7",
-    name: "Stone Coasters",
-    title: "Table Protection",
-    description: "Natural stone coasters with polished finish.",
-    category: "stone",
-    image: "https://images.unsplash.com/photo-1583623025817-d180a2221d0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "stone8",
-    name: "Stone Candlesticks",
-    title: "Lighting Decor",
-    description: "Elegant stone candlesticks for ambient lighting.",
-    category: "stone",
-    image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  },
-  {
-    id: "stone9",
-    name: "Stone Jewelry",
-    title: "Fashion Accessories",
-    description: "Beautiful stone jewelry with natural patterns.",
-    category: "stone",
-    image: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-  }
+
 ];
 
 export const services: Service[] = [

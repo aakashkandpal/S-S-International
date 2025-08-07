@@ -33,11 +33,8 @@ export default function Services() {
     { label: "Beads", value: "beads" },
     { label: "Ceramic", value: "ceramic" },
     { label: "Wood", value: "wood" },
-    { label: "Resin", value: "resin" },
-    { label: "Horn Bone", value: "horn-bone" },
-    { label: "Metal", value: "metal" },
+    { label: "Resin & Horn Bone", value: "resin" },
     { label: "Textile", value: "textile" },
-    { label: "Stone", value: "stone" },
   ];
 
   const filterProducts = (category: string) => {
